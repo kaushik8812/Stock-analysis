@@ -1,6 +1,5 @@
 # Stock Analysis MCP
 
-[![smithery badge](https://smithery.ai/badge/@SJDev2000/stock-analysis)](https://smithery.ai/server/@SJDev2000/stock-analysis)
 [![PyPI version](https://badge.fury.io/py/stock-analysis-mcp.svg)](https://badge.fury.io/py/stock-analysis-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -10,15 +9,8 @@ A financial analysis MCP server built on the [Claude Agent SDK](https://github.c
 
 ```bash
 pip install stock-analysis-mcp
-claude mcp add stock-analysis -e REDDIT_USERNAME=your_username -- python -m stock_analysis.mcp_server
+claude mcp add stock-analysis -e REDDIT_USERNAME=your_username -- python -m stock_analysis_mcp.server
 ```
-
-Or from the [Smithery marketplace](https://smithery.ai/server/@SJDev2000/stock-analysis):
-
-```bash
-npx @smithery/cli install @SJDev2000/stock-analysis --client claude
-```
-
 ---
 
 ## What it does
@@ -69,8 +61,8 @@ stock_analysis/
 **Requirements:** Python 3.10+
 
 ```bash
-git clone https://github.com/your-org/stock-analysis-mcp
-cd stock-analysis-mcp
+git clone https://github.com/kaushik8812/stock-analysis.git
+cd stock-analysis
 pip install -e .
 ```
 
@@ -140,13 +132,13 @@ The MCP server exposes the full bundle in one connection: **8 tools** (raw data 
 
 ```bash
 pip install stock-analysis-mcp
-claude mcp add stock-analysis -e REDDIT_USERNAME=your_username -- python -m stock_analysis.mcp_server
+claude mcp add stock-analysis -e REDDIT_USERNAME=your_username -- python -m stock_analysis_mcp.server
 ```
 
 **From source (development):**
 
 ```bash
-git clone https://github.com/SJDev2000/stock-analysis
+git clone https://github.com/kaushik8812/stock-analysis
 cd stock-analysis
 pip install -e .
 claude mcp add stock-analysis -- stock-analysis-mcp
